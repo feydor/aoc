@@ -1,42 +1,22 @@
-#include <algorithm>
-#include <concepts>
 #include <iostream>
-#include <fstream>
-#include <numeric>
 #include <vector>
+using namespace std;
 
+// 1: 1521, 2: 1543
+int main() {
+    int x;
+    vector<int> v;
+    while (scanf("%d\n", &x) != EOF)
+        v.push_back(x);
+    
+    int silver = 0;
+    for (size_t i = 1; i < v.size(); ++i)
+        silver+= (v[i] > v[i-1]);
 
-int main(int argc, char **argv) {
-    if (argc < 2) {
-        std::cerr << "Argument missing.\n";
-        return 1;
-    }
+    int gold = 0;
+    for (auto i = 3; i < v.size(); ++i)
+        gold += (v[i] > v[i-3]);
 
-    // load file
-    std::ifstream input_file (argv[1]);
-    if (!input_file.is_open()) {
-        std::cerr << "File failed to open.\n";
-        return 1;
-    }
-
-    // parse file into data
-    std::vector<int> data;
-    std::string line;
-    while (getline(input_file, line))
-        data.push_back(std::stoi(line));
-
-    int incs = 0;
-    for (auto i = 3; i < data.size(); ++i) {
-        /* because summation is associative simply compare the individual parts */
-        incs += (data[i] > data[i-3]);
-        // old way
-        // auto next = std::reduce(data.begin() + i + 1, data.begin() + i + 4);
-        // auto curr = std::reduce(data.begin() + i, data.begin() + i + 3);
-        // if (next > curr)
-        //     ++n;
-    }
-
-    std::cout << "part 2: " << incs << std::endl;
-
+    cout << silver << "\n" << gold << "\n";
     return 0;
 }
