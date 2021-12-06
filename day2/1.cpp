@@ -6,47 +6,46 @@
 #include <map>
 #include <numeric>
 #include <vector>
+using namespace std;
 
-typedef std::vector<std::pair<std::string, int>> instructions_t;
-typedef std::pair<std::string, int> instruction_t;
-
-auto adjacent_pairs(const std::vector<std::string> &lines) {
-    instructions_t is;
-    for (auto itr = lines.begin()+1; itr != lines.end()-1; itr += 2) {
-        is.push_back({*(itr-1), std::stoi(*itr)});
-    }
-    is.push_back({*(lines.end()-2), std::stoi(lines.back())}); // last instruction
-    return is;
-}
-
-int main(int argc, char **argv) {
-    if (argc < 2) {
-        std::cerr << "Argument missing.\n";
-        return 1;
-    }
-
-    // parse instructions
-    std::ifstream file(argv[1]);
-    std::vector<std::string> lines;
-    std::copy(std::istream_iterator<std::string>(file), std::istream_iterator<std::string>(),
-        std::back_inserter(lines));
-
-    auto instructions = adjacent_pairs(lines);
-
-    // execute instructions
+int gold(const vector<pair<char, int>> &cmds) {
     int horiz = 0, depth = 0, aim = 0;
-    for (const auto& i : instructions) {
-        switch (i.first[0]) {
+    for (const auto &[cmd, x] : cmds) {
+        switch (cmd) {
             case 'f': {
-                horiz += i.second;
-                depth += (aim * i.second);
-            } break;
-            case 'u': aim -= i.second; break;
-            case 'd': aim += i.second; break;
-            default: throw std::invalid_argument("Not a command.");
+                horiz += x;
+                depth += aim * x;
+            }
+            break;
+            case 'u': aim -= x; break;
+            case 'd': aim += x; break;
+            default: throw invalid_argument("not a command:" + cmd);
         }
     }
+    return horiz*depth;
+}
 
-    std::cout << "(horiz, depth) :: (" << horiz << ", " << depth << ")\n";
-    std::cout << "multiplied: " << horiz * depth << "\n";
+int silver(const vector<pair<char, int>> &cmds) {
+    string cmd;
+    int horiz = 0, depth = 0;
+    for (const auto &[cmd, x] : cmds) {
+        switch (cmd) {
+            case 'f': horiz += x; break;
+            case 'u': depth -= x; break;
+            case 'd': depth += x; break;
+            default: throw invalid_argument("not a command:" + cmd);
+        }
+    }
+    return horiz*depth; 
+}
+
+// 1: 2322630, 2: 2105273490
+int main() {
+    string str;
+    vector<pair<char, int>> cmds;
+    while (getline(cin, str))
+        cmds.emplace_back(str[0], str.back() - '0');
+    
+    cout << silver(cmds) << "\n" << gold(cmds) << "\n";
+    return 0;
 }
