@@ -1,119 +1,134 @@
 #include <algorithm>
-#include <array>
-#include <bitset>
-#include <cassert>
-#include <concepts>
-#include <cmath>
-#include <iostream>
-#include <sstream>
-#include <iterator>
 #include <numeric>
-#include "gold.h"
+#include <iostream>
+#include <iterator>
+#include <sstream>
+#include <vector>
+using namespace std;
 
-void board_t::mark(int row, int col) {
-    this->board[row][col].marked = true;
+#define BOARD_SIZE 5
+
+std::vector<std::string> split(const std::string& s, char delimiter) {                                                                                                                                                                                             
+   std::vector<std::string> splits;                                                                                                                                                           
+   std::string split;                                                                                                                                                                         
+   std::istringstream ss(s);                                                                                                                                                                  
+   while (std::getline(ss, split, delimiter)) {                                                                                                                                                                                          
+      splits.push_back(split);                                                                                                                                                                
+   }                                                                                                                                                                                          
+   return splits;                                                                                                                                                                             
 }
 
-// mark the number n, if it exists
-void board_t::mark_it(int n) {
-    for (auto &row : this->board) {
-        auto found = std::find_if(row.begin(), row.end(), [n](space_t sp){
-            return sp.n == n;
-        });
-
-        if (found != row.end())
-            found->marked = true;
+int get_col_max(const vector<vector<int>> &board, int col) {
+    int max = 0;
+    for (int i = 0; i < board.size(); ++i) {
+        auto col_n = board[i][col];
+        if (col_n > max)
+            max = col_n;
     }
+    return max;
 }
 
-int board_t::get(int row, int col) {
-    return this->board[row][col].n;
-}
-
-// assumming evenly sized rows
-int board_t::nspaces() {
-    return this->board.size() * this->board[0].size();
-}
-
-bool board_t::has_won() {
-    // check for horizontal wins
-    for (const auto &row : this->board) {
-        auto winner = std::all_of(row.begin(), row.end(), [](space_t space){
-            return space.marked;
-        });
-
-        if (winner) return true;
-    }
-
-    // check for vertical wins
-    for (size_t col = 0; col < this->board.size(); ++col) {
-        size_t marks = 0;
-        for (size_t row = 0; row < this->board.size(); ++row) {
-            auto space = this->board[row][col];
-            if (space.marked) ++marks;
-        }
-        if (marks == this->board.size()) return true;
-    }
-
-    return false;
-}
-
-// parse comma seperated numbers
-std::vector<int> parse_instructions(const std::string &line) {
-    auto num_strings = split(line, ',');
-
-    std::vector<int> instructions;
-    std::transform(num_strings.begin(), num_strings.end(), std::back_inserter(instructions),
-    [](auto str) { return std::stoi(str); });
-
-    return instructions;
-}
-
-board_t parse_board(const std::vector<std::string> &lines, int index) {
-    std::vector<std::vector<space_t>> board;
-    for (const auto &line : lines) {
-        std::vector<space_t> row;
-
-        auto num_strings = split(line, ' ');
-        std::transform(num_strings.begin(), num_strings.end(), std::back_inserter(row),
-        [](std::string str) { return space_t(std::stoi(str)); });
+auto parse_boards() {
+    vector<vector<vector<int>>> boards;
+    vector<vector<int>> board;
+    string line;
+    int line_count = 0;
+    while (getline(cin, line)) {
+        if (line.empty()) continue;
         
-        board.push_back(row);
-    }
-    return { .index = index, .board = board };
-}
-
-// sum of the unmarled spaces
-int board_t::sumof_unmarked() {
-    int sum = 0;
-    for (const auto &row : this->board)
-        for (const auto &space : row)
-            sum += space.marked ? 0 : space.n;
-    return sum;
-}
-
-template <typename Out>
-void split(const std::string &s, char delim, Out result) {
-    std::istringstream iss(s);
-    std::string item;
-    while (std::getline(iss, item, delim)) {
-        if (!item.empty())
-            *result++ = item;
-    }
-}
-
-std::vector<std::string> split(const std::string &s, char delim) {
-    std::vector<std::string> elems;
-    split(s, delim, std::back_inserter(elems));
-    return elems;
-}
-
-std::ostream & operator<<(std::ostream &s, const board_t &b) {
-    for (const auto &row : b.board) {
-        for (const auto &space : row) {
-            s << space.n << ":" << (space.marked ? "t" : "f") << " ";
+        vector<int> nums;
+        for (const auto &tok : split(line, ' ')) {
+            if (!tok.empty())
+                nums.push_back(stoi(tok));
         }
-        s << "\n";
+        board.push_back(nums);
+        line_count++;
+        if (line_count == BOARD_SIZE) {
+            boards.push_back(board);
+            board.clear();
+            line_count = 0;
+        }
     }
-    return s;
+    return boards;
+}
+
+// score = last_called * sum of all the uncalled numbers on the board
+int score(const vector<int> &cmds, const vector<vector<int>> &board, int last_called) {
+    // get sum of all unmarked spaces in winning board
+    auto left_uncalled = find(begin(cmds), end(cmds), last_called);
+    int sum = 0;
+    for (auto itr = left_uncalled+1; itr != end(cmds); itr++) {
+        auto unmarked = *itr;
+        for (const auto &row : board) {
+            auto found = find(begin(row), end(row), unmarked);
+            if (found != end(row))
+                sum += *found;
+        }
+    }
+    return sum * last_called;
+}
+
+// 1: 49686, 2: 26878
+int main() {
+    // parse cmds
+    string line;
+    getline(cin, line);
+    vector<int> cmds;
+    for (const auto &tok : split(line, ',')) {
+        if (!tok.empty())
+            cmds.push_back(stoi(tok));
+    }
+
+    vector<vector<vector<int>>> boards = parse_boards();
+    vector<vector<vector<int>>> board_turns = boards;
+
+    // replace each number with the index of that number in the called-out commands
+    for (auto& board : board_turns) {
+        for (int row = 0; row < board.size(); ++row) {
+            for (int col = 0; col < board[0].size(); ++col) {
+                auto n = board[row][col];
+                auto found = find(begin(cmds), end(cmds), n);
+                if (found != end(cmds))
+                    board[row][col] = distance(begin(cmds), found);
+                else
+                    throw invalid_argument("Board never wins.");
+            }
+        }
+    }
+
+    // for each board, find it's earliest possible winning turn
+    // for each row and column of every board, find the largest winning turn for that row/col
+    // the smaller of the two, is the winning turn for the whole board
+    vector<pair<int, int>> winning_turns; // board index, it's earliest possible winnning turn
+    for (int i = 0; i < board_turns.size(); ++i) {
+        auto board = board_turns[i];
+        int min_all_rows = 99999; // smallest maximum of all rows
+        for (const auto& row : board) {
+            auto row_max = max_element(begin(row), end(row));
+            if (*row_max < min_all_rows)
+                min_all_rows = *row_max;
+        }
+
+        int min_all_cols = 99999;
+        for (int col = 0; col < board.size(); ++col) {
+            auto col_max = get_col_max(board, col);
+            if (col_max < min_all_cols)
+                min_all_cols = col_max;
+        }
+
+        winning_turns.emplace_back(i, min(min_all_rows, min_all_cols));
+    }
+
+    // get the best and worst boards
+    auto best = min_element(begin(winning_turns), end(winning_turns), [](auto a, auto b){
+        return a.second < b.second;
+    });
+    auto worst = max_element(begin(winning_turns), end(winning_turns), [](auto a, auto b){
+        return a.second < b.second;
+    });
+
+    cout << "silver: " << score(cmds, boards[best->first], cmds[best->second]) << "\n";
+    cout << "gold: " << score(cmds, boards[worst->first], cmds[worst->second]) << "\n";
+
+    return 0;
 }
