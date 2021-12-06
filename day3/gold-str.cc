@@ -2,6 +2,7 @@
 #include <bitset>
 #include <fstream>
 #include <iostream>
+#include <iterator>
 #include <vector>
 
 const auto BIT_LEN = 40;
