@@ -1,14 +1,14 @@
 #include <string>
 #include <vector>
 
-struct space_t {
-    space_t(int n) : n(n), marked(false) {}
-    int n;
-    bool marked = false;
-};
-
 struct board_t {
-    std::vector<std::vector<space_t>> board;
+    std::vector<std::vector<int>> board;
+    std::vector<std::vector<bool>> marked;
+
+    board_t(const std::vector<std::string> &data);
+
+    bool has_bingo();
+
     void mark(int row, int col);
     void mark_it(int n);
     int get(int row, int col);

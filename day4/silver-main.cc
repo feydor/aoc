@@ -1,7 +1,10 @@
 #include <cassert>
 #include <fstream>
 #include <iostream>
+#include <iterator>
 #include "silver.h"
+
+const int ROWS = 5;
 
 int main(int argc, char **argv) {
     if (argc < 2) {
@@ -10,30 +13,56 @@ int main(int argc, char **argv) {
     }
 
     std::ifstream file(argv[1]);
-    std::string line;
-    if (!file.is_open())
-        throw std::ifstream::failure("Error opening file: " + std::string(argv[1]));
-
-    // parse first line (instructions)
-    std::getline(file, line);
-    auto instructions = parse_instructions(line);
+    std::vector<std::string> lines(std::istream_iterator<std::string>(file), std::istream_iterator<std::string>(), {});
+    
+    // parse commands
+    auto cmds_str = split(lines[0], ',');
+    std::vector<int> cmds;
+    std::transform(cmds_str.begin(), cmds_str.end(), std::back_inserter(cmds),
+    [](auto str) { return std::stoi(str); });
 
     // parse boards
     std::vector<board_t> boards;
-    std::vector<std::string> curr_board_lines;
-    const int ROWS = 15;
-    while (std::getline(file, line)) {
-        if (line.size() > 0) {
-            for (int i = 0; i < ROWS; ++i) {
-               curr_board_lines.push_back(line);
-               std::getline(file, line);
-            }
-            boards.push_back(parse_board(curr_board_lines));
-            curr_board_lines.clear();
-        }
+    for (auto line = lines.begin()+1; line != lines.end(); line += ROWS) {
+        boards.emplace_back(board_t(line, line + ROWS));
     }
 
-    std::cout << "boards size: " << boards.size() << std::endl;
+    // For each number in bingo board, replace it with the index of that number in
+    // the called-out number array you get at the start.
+    // A lower index iimplies that number is called early and a higher implies it's called late.
+    std::transform(boards.begin(), boards.end(), std::back_inserter(boards), [&](board_t board){
+        for (int row = 0; row < board.size(); ++row) {
+            for (int col = 0; col < board[0].size(); ++col) {
+                auto n = board[row][col];
+                auto itr = std::find_if(cmds.begin(), cmds.end(), [&](auto cmd) { return cmd == n; });
+                if (itr != cmds.end())
+                    board[row][col] = *itr;
+            }
+        }
+        return board;
+    });
+
+    // For each bingo board, get it's columns and rows.
+    // For each of those, find the maximum number in that column/row.
+    // This is the winning turn for that column/row
+    std::vector<std::pair<int, int>> winning_turns;
+    for (const auto& board : boards) {
+        auto rows = board.rows();
+        auto cols = board.cols();
+
+        winning_turns.emplace_back(
+            std::make_pair(std::max(rows.begin(), rows.end()), std::max(cols.begin(), cols.end()))
+        );
+    }
+
+    std::min(winning_turns.begin(), winning_turns.end(), [](auto a, auto b) {
+        return 
+    });
+    
+    // Then, find the minimum number of the winning turns.
+    // This is the winning turn for the bingo.
+
+
 
     // play game (iterate over instructions)
     // mark each board, if applicable
