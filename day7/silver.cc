@@ -7,30 +7,29 @@
 #include <sstream>
 using namespace std;
 
+// 328262
 int main() {
     string str;
     getline(cin, str);
 
-    vector<int> data;
+    vector<uint64_t> data;
     stringstream ss(str);
     while (getline(ss, str, ',')) {
-        data.push_back(stoi(str));
+        data.push_back(stoull(str));
     }
 
+    // convergence to median (test both floor and ceil)
     sort(begin(data), end(data));
-    auto min = data.front();
-    auto max = data.back();
-    vector<int> fuels(max - min, 0);
+    int mid = data.size()/2;
+    auto median_range = make_pair(data[mid], data[mid+1]);
+    auto fuels = make_pair(0ul, 0ul);
 
-    // from min to max
-    for (int dest = min; dest < max; ++dest) {
-        int fuel = 0;
-        for (int i = 0; i < data.size(); ++i) {
-            fuel += abs(dest - data[i]);
-        }
-        fuels[dest] = fuel;
+    auto distance = [](auto a, auto b){ return max(a, b) - min(a, b); };
+    for (const auto &x : data) {
+        fuels.first += distance(median_range.first, x);
+        fuels.second += distance(median_range.second, x);
     }
 
-    cout << *min_element(begin(fuels), end(fuels)) << endl;
+    cout << min(fuels.first, fuels.second) << endl;
     return 0;
 }
