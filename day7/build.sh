@@ -1,2 +1,2 @@
 #!/bin/bash
-g++ gold.cc && cat input | ./a.out
+g++ -g gold.cc && cat input | ./a.out
