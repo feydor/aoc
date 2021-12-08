@@ -5,9 +5,10 @@
 #include <iostream>
 using namespace std;
 
-#define DAYS 80
+#define DAYS 256 // silver is 80
 #define TTL 8
 
+// 1728611055389
 int main() {
     string str;
     array<uint64_t, TTL+1> ttl{};
@@ -26,7 +27,5 @@ int main() {
     }
 
     cout << reduce(begin(ttl), end(ttl), 0l) << endl;
-
-    test_ring();
     return 0;
 }

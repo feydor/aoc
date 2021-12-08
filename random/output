@@ -1,0 +1,13 @@
+mid 3
+lower size 3
+upper size 3
+[0, 3, 1, 4, 2, 5]
+mid 3
+lower size 4
+upper size 2
+[0, 4, 1, 5]
+mid 2
+lower size 1
+upper size 5
+[0, 1]
+2
