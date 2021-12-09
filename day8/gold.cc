@@ -1,4 +1,3 @@
-
 #include <algorithm>
 #include <cmath>
 #include <cstring>
@@ -10,13 +9,13 @@
 #include <sstream>
 using namespace std;
 
-#define OUTPUTDATA_SIZE 4 
+#define OUTPUT_SIZE 4 
 
 vector<string> split(const string &s, char delimiter = ' ') {
     vector<string> splits;
-    std::string split;
-    std::istringstream ss(s);
-    while (std::getline(ss, split, delimiter)) {
+    string split;
+    istringstream ss(s);
+    while (getline(ss, split, delimiter)) {
         if (split.empty()) continue;
         splits.push_back(split);
     }
@@ -32,11 +31,7 @@ bool is_anagram(string a, string b) {
     return false;
 }
 
-// 908067 is it
-// example answer: 61229
-// 908068 is wrong
-// 900389 is too low
-// 1114009 too high
+// 908067
 int main() {
     string str;
     char missing_segment_of_nine;
@@ -49,8 +44,8 @@ int main() {
 
         auto input_data = str.substr(0, delim-1);
         auto output_data = str.substr(delim+2);
-
         auto inputs = split(input_data);
+
         // sort by len sizes: 2, 3, 4, 5, 5, 5, 6, 6, 6, 7
         sort(begin(inputs), end(inputs), [](auto a, auto b){ return a.size() < b.size(); });
  
@@ -65,9 +60,6 @@ int main() {
         auto pivot = stable_partition(begin(inputs), end(inputs),
         [](string s){ return s.size() == 5 || s.size() == 6; });
         inputs.erase(pivot, end(inputs));
-
-        if (inputs.size() != 6) throw invalid_argument("precondition failed before 6 len loop");
-        if (inputs[2].size() != 5) throw invalid_argument("inputs[2].size() is not 5; precondiiton to 6len loop.");
 
         // inputs: 5, 5, 5, 6, 6, 6
         // work on len 6 strings
@@ -99,8 +91,6 @@ int main() {
             } else if (matches == 1) {
                 digits[9] = str;
                 missing_segment_of_nine = missing_segment[0];
-            } else {
-                throw invalid_argument("failed at len 6 loop");
             }
         }
 
@@ -120,15 +110,12 @@ int main() {
             digits[2] = inputs[1];
         } else if (res_3 != end(inputs[2])) {
             digits[2] = inputs[2];
-        } else {
-            throw invalid_argument("find digit 2 failed.");
         }
 
         // remove two from inputs
         remove(begin(inputs), end(inputs), digits[2]);
         inputs.resize(2);
 
-        // cout << inputs.at(0) << " " << inputs.at(1) << " " << inputs.at(2) << endl;
         if (inputs.size() != 2) throw invalid_argument("vector is not size 2 after finding two.");
         // inputs: 5, 5
         // 3 is the one that is not 2 and contains the missing segment of 6
@@ -141,19 +128,12 @@ int main() {
         } else if (r2 != end(inputs[1])) {
             digits[3] = inputs[1];
             digits[5] = inputs[0];
-        } else {
-            throw invalid_argument("failed to find three & five.");
         }
-
-        // for (const auto &[n, str] : digits) {
-        //     cout << n << " : " << str << endl;
-        // }
 
         // interpret outputs with digits map
         uint64_t sum = 0;
-        int pos = OUTPUTDATA_SIZE-1;
+        int pos = OUTPUT_SIZE-1;
         for (const auto &output : split(output_data)) {
-            // cout << "__" << output << "__";
             for (const auto &[n, segments] : digits) {
                 if (is_anagram(output, segments)) {
                     sum += (pow(10, pos) * n);
@@ -162,7 +142,6 @@ int main() {
                 }
             }
         }
-        cout << "sum: " << sum << endl;
         total_sum += sum;
     }
 

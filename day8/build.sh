@@ -1,2 +1,2 @@
 #!/bin/bash
-g++ silver.cc && cat example | ./a.out
+c++ gold.cc && cat input | ./a.out
