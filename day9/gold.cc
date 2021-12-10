@@ -10,7 +10,7 @@ int get_neighbor(const vector<string> &mat, int row, int col) {
     auto last_r = mat.size()-1;
     auto last_c = mat[0].size()-1;
 
-    if (row < 0 || row > last_r || col < 0 || col > last_c)
+    if (row < 0 || (unsigned)row > last_r || col < 0 || (unsigned)col > last_c)
         return INT32_MAX;
     return mat[row][col]-'0';
 }
@@ -51,13 +51,13 @@ int main() {
     }
     
     vector<uint64_t> basin_sizes;
-    vector<pair<int, int>> d = {{-1, 0}, {0, 1}, {1, 0}, {0, -1}};
-    for (int row = 0; row < mat.size(); ++row) {
-        for (int col = 0; col < mat[row].size(); ++col) {
+    vector<pair<int, int>> dir = {{-1, 0}, {0, 1}, {1, 0}, {0, -1}};
+    for (int row = 0; (unsigned)row < mat.size(); ++row) {
+        for (int col = 0; (unsigned)col < mat[row].size(); ++col) {
             int p = mat[row][col]-'0';
 
             // local min
-            if (all_of(begin(d), end(d), [&](auto d){return get_neighbor(mat, row+d.first, col+d.second) > p;})){
+            if (all_of(begin(dir), end(dir), [&](auto d){return get_neighbor(mat, row+d.first, col+d.second) > p;})){
                 vector<Point> basin;
                 add_neighbors(basin, mat, row, col);
                 basin_sizes.push_back(basin.size());

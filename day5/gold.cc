@@ -5,11 +5,11 @@
 
 using namespace std;
 
-int main(int argc, char **argv) {
+int main() {
     int x1, y1, x2, y2;
     map<pair<int, int>, int> lines;
     while (scanf("%d, %d -> %d, %d\n", &x1, &y1, &x2, &y2) != EOF) {
-        printf("%d, %d, %d, %d\n", x1, y1, x2, y2);
+        // printf("%d, %d, %d, %d\n", x1, y1, x2, y2);
 
         // vertical line
         if (x1 == x2) {

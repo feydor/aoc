@@ -1,2 +1,6 @@
-#!/bin/bash
-g++ --std=c++20 gold.cc && time cat input | ./a.out
+#!/bin/sh
+CXX=c++
+CXXFLAGS="-Wall -Wextra  -Wshadow -std=c++20 -pedantic"
+set -xe
+
+$CXX $CXXFLAGS -o gold gold.cc && time cat input | ./gold

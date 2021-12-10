@@ -1,2 +1,6 @@
-#!/bin/bash
-g++ -O3 gold.cc && time cat bigboy.txt | ./a.out
+#!/bin/sh
+CXX=c++
+CXXFLAGS="-Wall -Wextra -Wshadow -std=c++17 -pedantic -O3"
+set -xe
+
+$CXX $CXXFLAGS -o gold gold.cc && cat bigboy.txt | ./gold

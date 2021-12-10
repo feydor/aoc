@@ -33,17 +33,17 @@ bool is_anagram(string a, string b) {
 
 // 908067
 int main() {
-    string str;
+    string line;
     char missing_segment_of_nine;
     char missing_segment_of_six;
 
     uint64_t total_sum = 0;
-    while (getline(cin, str)) {
-        auto delim = str.find('|');
+    while (getline(cin, line)) {
+        auto delim = line.find('|');
         if (delim == string::npos) throw invalid_argument("'|' not found.");
 
-        auto input_data = str.substr(0, delim-1);
-        auto output_data = str.substr(delim+2);
+        auto input_data = line.substr(0, delim-1);
+        auto output_data = line.substr(delim+2);
         auto inputs = split(input_data);
 
         // sort by len sizes: 2, 3, 4, 5, 5, 5, 6, 6, 6, 7
@@ -63,7 +63,7 @@ int main() {
 
         // inputs: 5, 5, 5, 6, 6, 6
         // work on len 6 strings
-        for (int i = 3; i < inputs.size(); ++i) {
+        for (size_t i = 3; i < inputs.size(); ++i) {
             // get the set difference between "abcdefg" and current 6-len input
             string str = inputs[i];
             sort(begin(str), end(str));

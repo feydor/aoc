@@ -26,7 +26,6 @@ int gold(const vector<pair<char, int>> &cmds) {
 }
 
 int silver(const vector<pair<char, int>> &cmds) {
-    string cmd;
     int horiz = 0, depth = 0;
     for (const auto &[cmd, x] : cmds) {
         switch (cmd) {
