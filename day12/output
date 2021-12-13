@@ -1,0 +1,6952 @@
++ c++ -Wall -Wextra -Wshadow -std=c++20 -pedantic -o silver silver.cc
++ cat example
++ ./silver
+n_edges: 7
+printing graph: 
+A: start c b end 
+b: start A d end 
+c: A 
+d: b 
+end: A b 
+start: A b 
+starting traversal at start:
+A 
+printing map...
+A : 1
+c 
+printing map...
+A : 1
+c : 1
+A 
+printing map...
+A : 2
+c : 1
+b 
+printing map...
+A : 2
+b : 1
+c : 1
+A 
+printing map...
+A : 3
+b : 1
+c : 1
+end d 
+printing map...
+A : 3
+b : 1
+c : 1
+d : 1
+end : 0
+end end end A 
+printing map...
+A : 4
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 5
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 6
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 7
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 8
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 9
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 10
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 11
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 12
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 13
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 14
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 15
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 16
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 17
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 18
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 19
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 20
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 21
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 22
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 23
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 24
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 25
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 26
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 27
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 28
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 29
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 30
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 31
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 32
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 33
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 34
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 35
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 36
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 37
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 38
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 39
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 40
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 41
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 42
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 43
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 44
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 45
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 46
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 47
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 48
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 49
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 50
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 51
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 52
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 53
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 54
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 55
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 56
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 57
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 58
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 59
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 60
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 61
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 62
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 63
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 64
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 65
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 66
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 67
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 68
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 69
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 70
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 71
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 72
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 73
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 74
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 75
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 76
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 77
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 78
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 79
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 80
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 81
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 82
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 83
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 84
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 85
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 86
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 87
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 88
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 89
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 90
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 91
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 92
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 93
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 94
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 95
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 96
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 97
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 98
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 99
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 100
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 101
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 102
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 103
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 104
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 105
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 106
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 107
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 108
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 109
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 110
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 111
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 112
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 113
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 114
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 115
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 116
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 117
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 118
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 119
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 120
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 121
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 122
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 123
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 124
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 125
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 126
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 127
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 128
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 129
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 130
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 131
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 132
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 133
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 134
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 135
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 136
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 137
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 138
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 139
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 140
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 141
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 142
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 143
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 144
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 145
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 146
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 147
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 148
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 149
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 150
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 151
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 152
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 153
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 154
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 155
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 156
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 157
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 158
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 159
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 160
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 161
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 162
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 163
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 164
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 165
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 166
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 167
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 168
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 169
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 170
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 171
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 172
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 173
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 174
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 175
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 176
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 177
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 178
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 179
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 180
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 181
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 182
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 183
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 184
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 185
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 186
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 187
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 188
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 189
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 190
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 191
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 192
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 193
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 194
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 195
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 196
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 197
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 198
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 199
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 200
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 201
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 202
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 203
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 204
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 205
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 206
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 207
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 208
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 209
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 210
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 211
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 212
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 213
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 214
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 215
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 216
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 217
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 218
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 219
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 220
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 221
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 222
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 223
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 224
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 225
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 226
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 227
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 228
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 229
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 230
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 231
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 232
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 233
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 234
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 235
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 236
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 237
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 238
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 239
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 240
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 241
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 242
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 243
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 244
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 245
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 246
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 247
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 248
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 249
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 250
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 251
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 252
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 253
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 254
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 255
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 256
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 257
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 258
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 259
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 260
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 261
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 262
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 263
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 264
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 265
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 266
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 267
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 268
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 269
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 270
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 271
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 272
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 273
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 274
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 275
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 276
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 277
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 278
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 279
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 280
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 281
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 282
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 283
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 284
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 285
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 286
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 287
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 288
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 289
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 290
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 291
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 292
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 293
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 294
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 295
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 296
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 297
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 298
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 299
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 300
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 301
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 302
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 303
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 304
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 305
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 306
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 307
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 308
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 309
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 310
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 311
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 312
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 313
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 314
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 315
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 316
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 317
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 318
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 319
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 320
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 321
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 322
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 323
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 324
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 325
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 326
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 327
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 328
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 329
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 330
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 331
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 332
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 333
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 334
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 335
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 336
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 337
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 338
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 339
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 340
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 341
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 342
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 343
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 344
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 345
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 346
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 347
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 348
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 349
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 350
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 351
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 352
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 353
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 354
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 355
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 356
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 357
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 358
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 359
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 360
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 361
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 362
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 363
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 364
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 365
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 366
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 367
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 368
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 369
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 370
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 371
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 372
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 373
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 374
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 375
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 376
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 377
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 378
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 379
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 380
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 381
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 382
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 383
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 384
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 385
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 386
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 387
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 388
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 389
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 390
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 391
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 392
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 393
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 394
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 395
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 396
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 397
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 398
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 399
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 400
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 401
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 402
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 403
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 404
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 405
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 406
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 407
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 408
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 409
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 410
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 411
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 412
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 413
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 414
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 415
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 416
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 417
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 418
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 419
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 420
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 421
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 422
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 423
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 424
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 425
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 426
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 427
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 428
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 429
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 430
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 431
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 432
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 433
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 434
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 435
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 436
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 437
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 438
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 439
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 440
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 441
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 442
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 443
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 444
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 445
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 446
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 447
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 448
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 449
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 450
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 451
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 452
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 453
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 454
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 455
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 456
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 457
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 458
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 459
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 460
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 461
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 462
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 463
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 464
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 465
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 466
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 467
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 468
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 469
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 470
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 471
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 472
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 473
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 474
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 475
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 476
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 477
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 478
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 479
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 480
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 481
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 482
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 483
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 484
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 485
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 486
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 487
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 488
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 489
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 490
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 491
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 492
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 493
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 494
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 495
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 496
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 497
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 498
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 499
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 500
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 501
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 502
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 503
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 504
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 505
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 506
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 507
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 508
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 509
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 510
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 511
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 512
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 513
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 514
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 515
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 516
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 517
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 518
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 519
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 520
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 521
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 522
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 523
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 524
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 525
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 526
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 527
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 528
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 529
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 530
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 531
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 532
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 533
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 534
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 535
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 536
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 537
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 538
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 539
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 540
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 541
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 542
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 543
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 544
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 545
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 546
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 547
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 548
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 549
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 550
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 551
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 552
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 553
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 554
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 555
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 556
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 557
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 558
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 559
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 560
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 561
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 562
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 563
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 564
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 565
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 566
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 567
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 568
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 569
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 570
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 571
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 572
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 573
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 574
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 575
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 576
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 577
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 578
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 579
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 580
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 581
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 582
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 583
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 584
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 585
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 586
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 587
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 588
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 589
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 590
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 591
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 592
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 593
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 594
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 595
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 596
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 597
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 598
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 599
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 600
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 601
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 602
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 603
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 604
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 605
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 606
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 607
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 608
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 609
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 610
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 611
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 612
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 613
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 614
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 615
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 616
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 617
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 618
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 619
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 620
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 621
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 622
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 623
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 624
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 625
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 626
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 627
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 628
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 629
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 630
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 631
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 632
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 633
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 634
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 635
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 636
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 637
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 638
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 639
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 640
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 641
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 642
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 643
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 644
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 645
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 646
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 647
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 648
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 649
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 650
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 651
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 652
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 653
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 654
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 655
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 656
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 657
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 658
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 659
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 660
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 661
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 662
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 663
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 664
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 665
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 666
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 667
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 668
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 669
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 670
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 671
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 672
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 673
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 674
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 675
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 676
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 677
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 678
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 679
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 680
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 681
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 682
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 683
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 684
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 685
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 686
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 687
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 688
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 689
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 690
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 691
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 692
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 693
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 694
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 695
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 696
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 697
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 698
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 699
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 700
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 701
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 702
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 703
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 704
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 705
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 706
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 707
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 708
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 709
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 710
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 711
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 712
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 713
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 714
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 715
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 716
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 717
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 718
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 719
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 720
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 721
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 722
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 723
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 724
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 725
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 726
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 727
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 728
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 729
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 730
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 731
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 732
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 733
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 734
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 735
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 736
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 737
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 738
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 739
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 740
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 741
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 742
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 743
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 744
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 745
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 746
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 747
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 748
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 749
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 750
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 751
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 752
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 753
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 754
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 755
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 756
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 757
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 758
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 759
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 760
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 761
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 762
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 763
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 764
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 765
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 766
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 767
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 768
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 769
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 770
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 771
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 772
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 773
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 774
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 775
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 776
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 777
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 778
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 779
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 780
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 781
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 782
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 783
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 784
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 785
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 786
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 787
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 788
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 789
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 790
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 791
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 792
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 793
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 794
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 795
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 796
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 797
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 798
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 799
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 800
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 801
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 802
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 803
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 804
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 805
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 806
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 807
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 808
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 809
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 810
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 811
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 812
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 813
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 814
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 815
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 816
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 817
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 818
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 819
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 820
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 821
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 822
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 823
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 824
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 825
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 826
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 827
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 828
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 829
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 830
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 831
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 832
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 833
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 834
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 835
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 836
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 837
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 838
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 839
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 840
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 841
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 842
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 843
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 844
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 845
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 846
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 847
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 848
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 849
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 850
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 851
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 852
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 853
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 854
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 855
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 856
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 857
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 858
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 859
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 860
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 861
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 862
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 863
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 864
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 865
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 866
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 867
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 868
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 869
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 870
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 871
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 872
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 873
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 874
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 875
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 876
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 877
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 878
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 879
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 880
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 881
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 882
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 883
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 884
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 885
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 886
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 887
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 888
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 889
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 890
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 891
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 892
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 893
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 894
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 895
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 896
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 897
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 898
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 899
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 900
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 901
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 902
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 903
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 904
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 905
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 906
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 907
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 908
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 909
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 910
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 911
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 912
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 913
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 914
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 915
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 916
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 917
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 918
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 919
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 920
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 921
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 922
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 923
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 924
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 925
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 926
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 927
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 928
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 929
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 930
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 931
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 932
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 933
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 934
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 935
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 936
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 937
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 938
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 939
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 940
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 941
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 942
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 943
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 944
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 945
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 946
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 947
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 948
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 949
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 950
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 951
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 952
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 953
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 954
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 955
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 956
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 957
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 958
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 959
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 960
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 961
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 962
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 963
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 964
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 965
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 966
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 967
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 968
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 969
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 970
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 971
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 972
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 973
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 974
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 975
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 976
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 977
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 978
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 979
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 980
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 981
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 982
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 983
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 984
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 985
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 986
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 987
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 988
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 989
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+A : 990
+b : 1
+c : 1
+d : 1
+end : 0
+end A 
+printing map...
+interrupt

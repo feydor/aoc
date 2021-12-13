@@ -67,7 +67,6 @@ int main() {
 			break;
 		}
 	}
-
 	cout << "flashes: " << flashes << endl;
     return 0;
 }
