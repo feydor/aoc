@@ -27,46 +27,46 @@ bool visited(const vector<pair<int, int>> &v, int row, int col) {
 }
 
 uint64_t flash(vector<pair<int, int>> &flashed, vector<string> &mat, int row, int col) {
-	flashed.push_back(make_pair(row, col));
-	uint64_t flashes = 0;
-	for (auto &[nrow, ncol] : get_neighbors(mat, row, col)) {
-		if (!visited(flashed, nrow, ncol)) {
-			mat[nrow][ncol] = plus_one(mat[nrow][ncol]);
-			if (mat[nrow][ncol]-'0' > 9) {
-				++flashes;
-				flashes += flash(flashed, mat, nrow, ncol);
-				mat[nrow][ncol] = '0';
-			}
-		}
-	}
-	return flashes;
+    flashed.push_back(make_pair(row, col));
+    uint64_t flashes = 0;
+    for (auto &[nrow, ncol] : get_neighbors(mat, row, col)) {
+        if (!visited(flashed, nrow, ncol)) {
+            mat[nrow][ncol] = plus_one(mat[nrow][ncol]);
+            if (mat[nrow][ncol]-'0' > 9) {
+                ++flashes;
+                flashes += flash(flashed, mat, nrow, ncol);
+                mat[nrow][ncol] = '0';
+            }
+        }
+    }
+    return flashes;
 }
 
 int main() {
     vector<string> mat(istream_iterator<string>(cin), istream_iterator<string>(), {});
 
-	uint64_t flashes = 0;
-	for (size_t step = 0; step < STEPS; ++step) {
-		vector<pair<int, int>> flashed;
-		for (auto &line : mat)
-			transform(begin(line), end(line), begin(line), [](char c){ return plus_one(c); });
-		
-		for (size_t row = 0; row < mat.size(); ++row) {
-			for (size_t col = 0; col < mat[row].size(); ++col) {
-				if (mat[row][col]-'0' > 9) {
-					++flashes;
-					flashes += flash(flashed, mat, row, col);
-					mat[row][col] = '0';
-				}
-			}
-		}
+    uint64_t flashes = 0;
+    for (size_t step = 0; step < STEPS; ++step) {
+        vector<pair<int, int>> flashed;
+        for (auto &line : mat)
+            transform(begin(line), end(line), begin(line), [](char c){ return plus_one(c); });
+        
+        for (size_t row = 0; row < mat.size(); ++row) {
+            for (size_t col = 0; col < mat[row].size(); ++col) {
+                if (mat[row][col]-'0' > 9) {
+                    ++flashes;
+                    flashes += flash(flashed, mat, row, col);
+                    mat[row][col] = '0';
+                }
+            }
+        }
 
-		// get the step where all energies flash
-		if (flashed.size() == ALL) {
-			cout << "step: " << step+1 << endl;
-			break;
-		}
-	}
-	cout << "flashes: " << flashes << endl;
+        // get the step where all energies flash
+        if (flashed.size() == ALL) {
+            cout << "step: " << step+1 << endl;
+            break;
+        }
+    }
+    cout << "flashes: " << flashes << endl;
     return 0;
 }
