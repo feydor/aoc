@@ -1,3 +1,4 @@
+/** day13 - Transparent Origami */
 #include <algorithm>
 #include <iostream>
 #include <iterator>
@@ -99,7 +100,6 @@ int main() {
 		auto tokens = split(instr);
 		auto equals_sign = tokens[2].find('=');
 		int n = stoi(tokens[2].substr(equals_sign+1));
-		cout << "n=" << n << "\n";
 		
 		if (tokens[2][0] == 'y') {
 			fold_y(mat, n);
