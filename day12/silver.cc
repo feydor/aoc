@@ -4,18 +4,18 @@
 #include <iterator>
 #include <map>
 #include <sstream>
+#include <ranges>
 #include <vector>
 using namespace std;
 
-vector<string> split(const string &s, char delimiter = ' ') {
-    vector<string> splits;
-    string split;
-    istringstream ss(s);
-    while (getline(ss, split, delimiter)) {
-        if (split.empty()) continue;
-        splits.push_back(split);
-    }
-    return splits;
+vector<string_view> split(string_view s, char delimiter = ' ') {
+	vector<string_view> result;
+	auto split = s
+		| ranges::views::split(delimiter)
+		| ranges::views::transform([](auto&& str) { return string_view(&*str.begin(), ranges::distance(str)); });
+	for (const auto word : split)
+		result.push_back(word);
+	return result;
 }
 
 void print_map(const map<string, int> &m) {
@@ -53,7 +53,7 @@ int main() {
     vector<string> lines(istream_iterator<string>(cin), istream_iterator<string>(), {});
     vector<pair<string, string>> edges;
     for (const auto &line : lines) {
-        auto tokens = split(line, '-');
+		auto tokens = split(line, '-');
         edges.emplace_back(tokens[0], tokens[1]);
     }
     
@@ -93,14 +93,14 @@ int main() {
 
     cout << "starting traversal at start:\n";
     uint64_t distinct_paths = 0;
-    for (const auto &edge : graph["start"]) {
-        map<string, int> visited;
-        while (bfs(graph, visited, edge, distinct_paths)) {
-            // do nothing
-        }
-        cout << "\n";
-    }
-    cout << "distinct_paths: " << distinct_paths << endl;
+    // for (const auto &edge : graph["start"]) {
+    //     map<string, int> visited;
+    //     while (bfs(graph, visited, edge, distinct_paths)) {
+    //         // do nothing
+    //     }
+    //     cout << "\n";
+    // }
+    // cout << "distinct_paths: " << distinct_paths << endl;
     return 0;
 }
 
