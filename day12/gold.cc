@@ -15,6 +15,7 @@ using namespace std;
 bool graph[GRAPH_CAP][GRAPH_CAP];
 vector<uint32_t> visited(GRAPH_CAP, 0);
 vector<string> vertices;
+uint32_t vert_start = 0; // location of "start" in vertices
 
 bool is_large_cave(unsigned int idx) {
 	return isupper(vertices.at(idx)[0]);
@@ -28,6 +29,7 @@ void print_graph() {
 		cout << "\n";
 	}
 }
+
 // returns an index based on location in vertices
 uint64_t vertex_idx(const string &s) {
 	// if already is in graph, return corresponding idx
@@ -42,19 +44,26 @@ uint64_t vertex_idx(const string &s) {
 	return 0;
 }
 
-// start is visited, end is next
-void dfs(uint32_t start, uint32_t end, uint64_t &paths) {
+void dfs(uint32_t start, uint32_t end, bool twice, uint64_t &paths) {
 	if (start == end) {
 		paths++;
 		return;
 	}
 
 	for (size_t i = 0; i < vertices.size(); ++i) {
-		// if adjacent and not visited
-		if (graph[start][i] && !visited[i]) {
-			if (!is_large_cave(i)) visited[i] = true;
-			dfs(i, end, paths);
-			visited[i] = false; // after unroll, clean up trail
+		// if adjacent
+		if (graph[start][i]) {
+			if (is_large_cave(i)) {
+				// large caves can be visited many times
+				dfs(i, end, twice, paths);
+			} else if (!visited[i]) {
+				// small caves can be visited up to two times
+				visited[i] = true;
+				dfs(i, end, twice, paths);
+				visited[i] = false;
+			} else if (!twice && i != vert_start) {
+				dfs(i, end, true, paths);
+			}
 		}
 	}
 }
@@ -87,9 +96,9 @@ int main() {
 	auto end = find(begin(vertices), vertices.end(), "end");
 	if (start == vertices.end() || end == vertices.end()) throw invalid_argument("a start/end cave was not provided.");
 	
-	auto start_idx = distance(begin(vertices), start);
-	visited[start_idx] = true; // set start as visited
-	dfs(start_idx, distance(begin(vertices), end), paths);
+	vert_start = distance(begin(vertices), start);
+	visited[vert_start] = true; // set start as visited
+	dfs(vert_start, distance(begin(vertices), end), false, paths);
 
     cout << "paths: " << paths << endl;
     return 0;

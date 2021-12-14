@@ -4,6 +4,7 @@
 #include <ranges>
 #include <vector>
 
+namespace aoc {
 /* split a string into tokens using an optional delimiter */
 std::vector<std::string_view> split(std::string_view s, char delimiter = ' ') {
 	std::vector<std::string_view> result;
@@ -13,4 +14,6 @@ std::vector<std::string_view> split(std::string_view s, char delimiter = ' ') {
 	for (const auto word : split)
 		result.push_back(word);
 	return result;
+}
+
 }
