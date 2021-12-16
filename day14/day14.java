@@ -4,14 +4,13 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.*;
-import java.util.stream.IntStream;
 
 public class day14 {
-    static final int STEPS = 10;
-    static final int ALPHA_SIZE = 'Z' - 'A' + 1;
+    static final int STEPS = 40;
+    static final int ALPHA_SIZE = ('Z' - 'A') + 1;
+
+    // store characters as ints for easy indexing into a frequency array
     private record Rule(int a, int b, int insert){}
-    // char -> int == char-'A'
-    // int -> char == int+'A'
 
     public static void main(String[] args) throws IOException {
         var data = Files.lines(Paths.get(args[0])).toList();
@@ -22,37 +21,34 @@ public class day14 {
                 .toList();
 
         // make a 2d matrix where the indices are the alphabets, the intersections are counts of each pair
-        var pairMatrix = new int[ALPHA_SIZE][ALPHA_SIZE];
+        var pairMatrix = new long[ALPHA_SIZE][ALPHA_SIZE];
         for (int i = 0; i < template.length()-1; ++i) {
             var first = template.charAt(i)-'A';
             var second = template.charAt(i+1)-'A';
             pairMatrix[first][second]++;
         }
 
-        printMatrix(pairMatrix);
-        printRules(instructions);
-
+        // run the pair insertion
         for (int step = 0; step < STEPS; ++step) {
             pairMatrix = pairInsertion(pairMatrix, instructions);
         }
-        printMatrix(pairMatrix);
 
-        var freq = new int[ALPHA_SIZE]; // frequency of alphabet
+        // for each character, add its occurrences to freq
+        var freq = new long[ALPHA_SIZE]; // frequency of alphabet
         for (int i = 0; i < ALPHA_SIZE; ++i) {
             for (int j = 0; j < ALPHA_SIZE; ++j) {
-                freq[i] += pairMatrix[i][j]; // compress columns into rows
+                freq[i] += pairMatrix[i][j];
             }
         }
         freq[template.charAt(template.length()-1)-'A']++; // add the last character in the template
 
-        // print frequency array
-        int max = Integer.MIN_VALUE;
-        int min = Integer.MAX_VALUE;
-        for (int i = 0; i < freq.length; ++i) {
-            System.out.printf("%c: %d\n", i+'A', freq[i]);
-            if (freq[i] > 0) {
-                max = Math.max(max, freq[i]);
-                min = Math.min(min, freq[i]);
+        // find the most and least common occurrences
+        var max = Long.MIN_VALUE;
+        var min = Long.MAX_VALUE;
+        for (long x : freq) {
+            if (x > 0) {
+                max = Math.max(max, x);
+                min = Math.min(min, x);
             }
         }
         System.out.print("\n");
@@ -67,7 +63,7 @@ public class day14 {
         }
     }
 
-    private static void printMatrix(int[][] matrix) {
+    private static void printMatrix(long[][] matrix) {
         System.out.println("Printing matrix...");
         // print column labels
         System.out.print("   ");
@@ -90,8 +86,8 @@ public class day14 {
         }
     }
 
-    private static int[][] pairInsertion(int[][] pairs, List<Rule> rules) {
-        var nextPairs = new int[ALPHA_SIZE][ALPHA_SIZE];
+    private static long[][] pairInsertion(long[][] pairs, List<Rule> rules) {
+        var nextPairs = new long[ALPHA_SIZE][ALPHA_SIZE];
 
         // for each rule, get the number of pairs that are affected by that rule
         // add them to the new pairs created by that rule
@@ -101,13 +97,6 @@ public class day14 {
             nextPairs[rule.insert][rule.b] += nPairs;
         }
         return nextPairs;
-    }
-
-    // get every k pair in str
-    public static List<String> getSubStrings(String str, int k) {
-        return IntStream.range(0, str.length() - k+1)
-                .mapToObj(i -> str.substring(i, i+k))
-                .toList();
     }
 }
 
