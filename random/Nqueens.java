@@ -1,6 +1,24 @@
+
+/*
+ * Copyright (c) 2021. Victor Reyes
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <https://www.gnu.org/licenses/>.
+ */
+
 package xyz.feydor.aoc;
 
-public class nqueens {
+public class Nqueens {
+
     private static final int N = 8;
     private static final char[][] board = new char[N][N];
 
@@ -11,8 +29,9 @@ public class nqueens {
                 board[i][j] = '.';
 
         var count = search(board,0);
-        System.out.println("# of solutions to " + N + "-queens problem: " + count);
+        System.out.println("# of unique solutions to " + N + "-queens problem: " + count);
     }
+
 
     public static long search(char[][] board, int row) {
         // when last row is successfully reached
@@ -36,6 +55,7 @@ public class nqueens {
         return count;
     }
 
+
     public static boolean isSafe(char[][] board, int row, int col) {
         // is not safe if
         // any queen shares the same column, top-left diagonal, or top-right diagonal
@@ -54,6 +74,7 @@ public class nqueens {
 
         return true;
     }
+
 
     public static void printBoard(char[][] board) {
         for (int i = 0; i < N; i++) {
