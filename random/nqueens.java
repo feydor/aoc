@@ -38,41 +38,18 @@ public class nqueens {
 
     public static boolean isSafe(char[][] board, int row, int col) {
         // is not safe if
-        // any queen shares the same column
-        for (int i = 0; i < row; ++i) {
+        // any queen shares the same column, top-left diagonal, or top-right diagonal
+        int left_diag_j = col;
+        int right_diag_j = col;
+        for (int i = row; i >= 0; --i) {
             if (board[i][col] == 'Q')
                 return false;
-        }
-
-        // any queen shares the same row
-        for (int i = 0; i < col; ++i) {
-            if (board[row][i] == 'Q')
+            if (left_diag_j >= 0 && board[i][left_diag_j] == 'Q')
                 return false;
-        }
-
-        // four diagonals
-        // top right
-        for (int i = row, j = col; i >= 0 && j < N; i--, j++) {
-            if (board[i][j] == 'Q')
+            if (right_diag_j < N && board[i][right_diag_j] == 'Q')
                 return false;
-        }
-
-        // top left
-        for (int i = row, j = col; i >= 0 && j >= 0; i--, j--) {
-            if (board[i][j] == 'Q')
-                return false;
-        }
-
-        // bottom right
-        for (int i = row, j = col; i < N && j < N; i++, j++) {
-            if (board[i][j] == 'Q')
-                return false;
-        }
-
-        // bottom left
-        for (int i = row, j = col; i < N && j >= 0; i++, j--) {
-            if (board[i][j] == 'Q')
-                return false;
+            --left_diag_j;
+            ++right_diag_j;
         }
 
         return true;
